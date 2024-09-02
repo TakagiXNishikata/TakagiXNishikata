@@ -1,0 +1,293 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --primary: #ff9e1b ;    --primary-gradient: ;
+    --secondary: #343a40 ;  --darker-secondary: #343a40b3 ;
+    --tertiary: #6c757d ;
+    --title: #000000; --f-title: Inter ;  --subtitle: ; --content: ;  --background: #D9D9D9;
+}
+
+body {margin:0; background-color: var(--background);}
+.home {
+    font-family: var(--f-title);
+    width: 100%;
+}
+
+.border {
+    background-color: black;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.home h1 {
+    
+}
+
+.home p {
+
+}
+
+.fam {
+    font-family: var(--f-title);
+}
+
+.title2 {
+    padding: 1px;
+    background-color: black;
+    margin: 0px 20px 0 20px;
+    column-gap: 1px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.title3 {
+    text-align: center;
+    font-family: var(--f-title) ;
+}
+
+.container {    
+    padding: 1px;
+    background-color: black;
+    margin: 0px 20px 0 20px;
+    column-gap: 1px;
+    display: grid;
+}
+
+.c3 {
+    grid-template-columns: auto auto auto;
+}
+
+.c2 {
+    grid-template-columns: auto auto;
+}
+
+.social1 {
+    justify-content: center;
+    margin-top: 10px;
+    grid-template-columns: 80px 80px 80px;
+    gap: 10px;
+    display: grid;
+}
+
+.social1 .grid {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: black;
+    box-shadow: 4px 4px 0 0 black;
+}
+
+.grid img {
+    height: 40px;
+}
+
+.title {
+    background: url("3.jpg") no-repeat -400px -360px scroll;
+    background-color: var(--darker-secondary);
+    background-blend-mode: color-burn;
+    background-size: 42cm;
+    margin: 3rem 5rem 3rem 5rem;
+    padding: 5rem;
+    border: 1px solid transparent;
+    box-shadow: 10px 10px 0 0 var(--primary);
+}
+
+.yo {
+    font-family: var(--f-title);
+    position: absolute;
+    top: 14rem;
+    left: 6rem;
+    transform: scaleY(1.5);
+    font-size: 65pt;
+    font-weight: 700;
+}
+
+#nav {
+    z-index: 20;
+}
+
+#nav ul {
+    border-bottom: 1px solid black; 
+    list-style-type: none;
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0;
+    overflow: hidden;
+    background: transparent;
+}
+
+#nav li {
+    text-align: center;
+    float: right;
+}
+
+#nav li a {
+    display: block;
+    font-size: 17pt;
+    font-family: var(--f-title);
+    font-weight: 600;
+    color: var(--title);
+    text-align: center;
+    padding: 1rem 16px;
+    text-decoration: none;
+}
+
+#nav li:first-child a {
+    display: block;
+    font-size: 20pt;
+    font-family: var(--f-title);
+    font-weight: 600;
+    background-color: var(--title);
+    color: var(--primary);
+    text-align: center;
+    padding: 1rem 16px;
+    text-decoration: none;
+}
+
+#nav li a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.changeNav {
+    background-color: var(--background);
+    box-shadow: 0px 0px 2px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.changeNav + .content {
+    padding-top: 500px;
+}
+
+.card {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--background);
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.card button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: var(--f-title);
+    font-weight: 600;
+    background-color: black;
+    color: var(--primary);
+    box-shadow: 4px 4px 0 0 var(--primary);
+
+}
+
+.card button:hover {
+    box-shadow: 4px 4px 0 0 black;
+    border: none;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: black;
+}
+
+.scroll {
+    text-align: center;
+    background-color: var(--primary);
+    position: absolute;
+    top: 35rem;
+    left: 35rem;
+    font-size: 25pt;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+
+.logo-container {
+    overflow: hidden;
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    flex-shrink: 0;
+    gap: 3.5rem;
+    padding: 1rem;
+    animation: infinite-scroll 11s linear infinite;
+}
+
+.logo img {
+    height: 5rem;
+    filter: grayscale(1);
+}
+
+.logo img:hover {
+    filter: grayscale(0);
+}
+
+@keyframes infinite-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.content {
+    margin-top: 50px;
+}
+
+.content .album {
+    padding: 5px;
+}
+
+.content h1 {
+    text-align: center;
+    font-family: var(--f-title);
+}
+
+.about {
+    padding: 1px;
+    background-color: black;
+    margin: 0px 20px 0 20px;
+    column-gap: 1px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.about p {
+    text-align: justify;
+}
+
+.project {
+    padding: 1px;
+    background-color: black;
+    margin: 0 20px;
+    column-gap: 1px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.project .card {
+    font-size: 20px;
+    text-align: center;
+}
+
+.certificate .card img{
+    transform: scale(0.5);
+    transition: ease-in 2s;
+}
+
+.certificate .card img:hover {
+    transform: scale(1);
+}
+
+.footer {
+    background-color: var(--darker-secondary);
+}

@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Alata-Regular';
+    src:    url('assets/fonts/Alata-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-Black';
+    src:    url('assets/fonts/static/Inter_28pt-Black.ttf') format('ttf');
+    font-weight: black;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}

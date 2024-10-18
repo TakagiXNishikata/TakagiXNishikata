@@ -11,7 +11,7 @@ export default {
         smooth: 'smooth',
       },
       colors: {
-        'deep-blue' : '#011B60',
+        'deep-blue' : '#001146',
         'aquamarine':'#7FFFD4',
         'earth-green':'#0C1915',
         'bone-white':'#E2E8F0',

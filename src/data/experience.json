@@ -1,0 +1,23 @@
+{
+    "experience" : [
+        {
+            "job_id": "1",
+            "job_title": "Frontend Developer",
+            "job_employment_type": "Self_Employed",
+            "job_employment_location": "Of-site",
+            "job_start": "Sept 2024",
+            "job_end": "Sept 2024",
+            "job_city": "Malang",
+            "job_description": {
+                "summary": "Responsible for developing and maintaining website for International Symposium of Indonesian Society for Microbiology (ISISM) that are attended by speaker from other country",
+                "details": [
+                    "Website for event registration",
+                    "Freelance and teamwork based project"
+                ]
+            },
+            "job_skills": ["React", "Tailwind"],
+            "employer_name": "ISISM ",
+            "employer_link": "https://isism-permi.org/"
+        }
+    ]
+}

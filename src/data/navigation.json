@@ -14,7 +14,7 @@
     },
     {
       "nav_id": "3",
-      "link_text": "Project}",
+      "link_text": "Project",
       "href": "#project",
       "scrollspy_id": "project"
     }

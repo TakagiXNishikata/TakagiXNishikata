@@ -1,44 +1,46 @@
-import About from './components/About'
-import { useRef } from 'react'
-import ScrollSpy from 'react-ui-scrollspy'
-import Experience from './components/Experience'
-import experience from './data/experience.json'
-import Summary from './components/Summary'
-import LinkArrow from './components/LinkArrow'
-import Navigation from './components/Navigation'
-import navigation from './data/navigation.json'
+import About from './components/About';
+import { useRef } from 'react';
+import ScrollSpy from 'react-ui-scrollspy';
+// import SocialMedia from './components/SocialMedia';
+import Experience from './components/Experience';
+import experience from './data/experience.json';
+import Summary from './components/Summary';
+// import LinkArrow from './components/LinkArrow';
+import navigation from './data/navigation.json';
 // import { useNavigate } from "react-router-dom";
-import SectionTitle from './components/SectionTitle'
+import SectionTitle from './components/SectionTitle';
+// import { featured } from './data/featured';
+// import Footer from "./components/Footer";
 
 function App() {
   // const navigate = useNavigate();
   const parentScrollContainerRef = useRef(null);
   const dataExperience = experience.experience;
-  // const dataNav = Navigation.navigation;
+  const dataNav = navigation.navigation;
   // const dataProjects = featured;
 
-  // const onPress = (e) => {
-  //   e.prevetDefault();
-  //     const target = window.document.getElementById(
-  //       e.currentTarget.href.split("#")[1]
-  //     );
-  //     if (target) {
-  //       var headerOffset = 100;
-  //       var elementPosition = target.getBoundingClientRect().top;
-  //       var offsetPosition = elementPosition - headerOffset;
+  const onPress = (e) => {
+    e.prevetDefault();
+      const target = window.document.getElementById(
+        e.currentTarget.href.split("#")[1]
+      );
+      if (target) {
+        var headerOffset = 100;
+        var elementPosition = target.getBoundingClientRect().top;
+        var offsetPosition = elementPosition - headerOffset;
 
-  //       window.scrollBy({
-  //         top: offsetPosition,
-  //         behavior: "smooth",
-  //       });
-  //     }
-  // };
+        window.scrollBy({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+  };
 
   return (
     <div className='mx-auto lg-max-w-none xl:max-w-screen-xl lg:px-6 xl: px-24 min-h-screen'>
       <div className='lg:flex lg:gap-4'>
       <aside className='py-16 xl:py-24 px-6 mx-auto md:w-4/6 lg:w-1/2 lg:sticky max-h-screen flex flex-col justify-between top-0'>
-      {/* <Summary data={dataNav} onPress={onPress}/> */}
+      <Summary data={dataNav} onPress={onPress}/>
       {/* <SocialMedia/> */}
       </aside>
       <main
@@ -83,7 +85,7 @@ function App() {
       </main>
       </div> 
     </div>
-  )
+  );
 }
 
 export default App

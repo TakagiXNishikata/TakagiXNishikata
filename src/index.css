@@ -11,9 +11,23 @@
 }
 
 html {
+    scroll-padding-top: 120px;
     scroll-behavior: smooth;
 }
 
 body {
     @apply bg-slate-950 font-Inter leading-relaxed antialiased font-normal text-slate-400 selection:bg-aquamarine/10 selection:text-aquamarine scroll-smooth;
+}
+
+
+@media screen and (max-width: 1439px), screen and (max-height: 700px) {
+.title-page {
+    margin-top: 0;
+}
+}
+
+@media screen and (max-width: 767px) {
+.title-page {
+    margin-top: 1.5rem;
+}
 }

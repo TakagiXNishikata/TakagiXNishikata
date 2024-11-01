@@ -10,6 +10,19 @@
     }
 }
 
+a:hover {
+    @apply text-aquamarine;
+}
+
+a.active .nav-indicator {
+@apply bg-slate-200;
+@apply w-16;
+}
+
+a.active .nav-text {
+@apply text-slate-200;
+}
+
 html {
     scroll-padding-top: 120px;
     scroll-behavior: smooth;

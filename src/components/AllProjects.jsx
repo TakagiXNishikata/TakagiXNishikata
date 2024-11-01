@@ -26,7 +26,7 @@ export default function AllProjects() {
         <button
           onClick={() => navigate("/")}
           type="button"
-          className="group mb-2 inline-flex items-center leading-tight text-primary"
+          className="group mb-2 inline-flex items-center leading-tight text-aquamarine"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ export default function AllProjects() {
               clipRule="evenodd"
             ></path>
           </svg>
-          Januar Maksum
+          Raffi Ananta
         </button>
         <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
           All Projects
@@ -85,7 +85,7 @@ export default function AllProjects() {
                 <td className="py-4 md:pr-4 align-top text-slate-200">
                   <a
                     href={item.project_link}
-                    className="group-hover:text-primary cursor-pointer"
+                    className="group-hover:text-aquamarine cursor-pointer"
                     target="_blank"
                   >
                     <h3 className="font-semibold md:pr-0 text-balance">
@@ -118,7 +118,7 @@ export default function AllProjects() {
                 <td className="hidden md:table-cell py-4 align-top">
                   <a
                     href={item.project_link}
-                    className="group-hover:text-primary cursor-pointer font-semibold whitespace-nowrap"
+                    className="group-hover:text-aquamarine cursor-pointer font-semibold whitespace-nowrap"
                     target="_blank"
                   >
                     {item.project_link_type === "github" && (

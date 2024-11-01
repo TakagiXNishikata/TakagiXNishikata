@@ -68,8 +68,8 @@ function App() {
               </ul>
               <div className="group mt-4 inline-flex">
                 <a
-                  href="/januarmaksum-cv.pdf"
-                  className="flex group-hover:text-primary cursor-pointer text-slate-200 font-semibold"
+                  href="#"
+                  className="flex group-hover:text-aquamarine cursor-pointer text-slate-200 font-semibold"
                 >
                   View Full Resume
                   <LinkArrow />
@@ -87,7 +87,7 @@ function App() {
                 <button
                   type="button"
                   onClick={() => navigate("/projects")}
-                  className="flex group-hover:text-primary cursor-pointer text-slate-200 font-semibold items-center"
+                  className="flex group-hover:text-aquamarine cursor-pointer text-slate-200 font-semibold items-center"
                 >
                   View Full Project Archive
                   <svg

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Navigation from "./Navigation";
+import Navigation from "./navigation";
 
 export default function Summary({ data, onPress }) {
   const [classNameId, setClassNameId] = useState('#about');
